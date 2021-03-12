@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Demo</title>
+</head>
+
+<body>
+    <h1>Forms Demo</h1>
+    <form action="\help">
+        <p>
+            <label for="fullname">Enter Name :</label>
+            <input type="text" placeholder="enter name" id="fullname" name="name" value="testing textbox">
+        </p>
+        <p>
+            <label for="password">enter password
+                <input type="password" placeholder="enter password" id="password" name="password">
+            </label>
+        </p>
+        <p>
+            <label for="color">Enter color
+                <input type="color" id="color" name="color">
+            </label>
+        </p>
+        <p>
+            <label>
+                enter number
+                <input type="number" placeholder="enter number" name="number">
+            </label>
+        </p>
+        <button type="button">Regular button (wont submit)</button>
+        <button>submit</button>
+        <input type="submit" value="click me">
+    </form>
+    <hr>
+    <button>outside of form</button>
+    <h2>hijacking Search</h2>
+    <form action="https://www.google.com/search">
+        <input type="text" name="q">
+        <button>search google</button>
+    </form>
+    <h2>other elements</h2>
+    <form action="\hello">
+        <input type="checkbox" name="agree_tos" id="agree" checked value="This is checked">
+        <label for="agree">I agree to this world</label>
+        <input type="checkbox" name="agree_tos" id="other_checkbox"  >
+        <label for="other_checkbox">without vale attribute</label>
+        <p>
+            <label for="L">L</label>
+            <input type="radio" name="size" id="L" value="L">
+            <label for="M">M</label>
+            <input type="radio" name="size" id="M" value="M">
+            <label for="S">S</label>
+            <input type="radio" name="size" id="S" value="S">
+            <label for="other">other</label>
+            <input type="radio" name="other" id="S" value="other">
+        </p>
+        <p>
+            <label for="meal">please select a meal type</label>
+            <select name="meal" id="meal">
+                <option value="">NULL</option>
+                <option value="normal">Normal</option>
+                <option value="veg" selected>vegetarian</option>
+                <option value="nonveg">Non-vegetarian</option>
+            </select>
+        </p>
+        <p>
+            <label for="price">Price</label>
+            <input type="range" name="price" id="price" min="1" max="100" step="20" value="81">
+        </p>
+        <button>submit</button>
+    </form>
+
+</body>
+
+</html>
